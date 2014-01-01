@@ -5,7 +5,7 @@
 <script>
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '572075149529172',
+    appId      : '478564758918959',
     status     : true, // check login status
     cookie     : true, // enable cookies to allow the server to access the session
     xfbml      : true  // parse XFBML
@@ -22,6 +22,7 @@
       // login status of the person. In this case, we're handling the situation where they 
       // have logged in to the app.
       testAPI();
+      window.location.href = '/bagTypes.jsp';
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
       // FB.login() to prompt them to do so. 
